@@ -6,12 +6,22 @@
  * To change this template use File | Settings | File Templates.
  */
 package {
+import commands.LoadImagesXML;
+
+import events.CoreEvent;
+
+import robotlegs.bender.extensions.eventCommandMap.api.IEventCommandMap;
+
 import robotlegs.bender.framework.api.IConfig;
 
 public class CommandsConfig implements IConfig {
 
-    public function configure():void {
+    [Inject]
+    public var commandMap:IEventCommandMap;
 
+    public function configure():void {
+        trace('commands config init');
+        commandMap.map(CoreEvent.LOAD_XML, CoreEvent).toCommand(LoadImagesXML);
     }
 
 }

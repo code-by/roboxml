@@ -6,12 +6,31 @@
  * To change this template use File | Settings | File Templates.
  */
 package {
+import events.CoreEvent;
+
+import robotlegs.bender.extensions.mediatorMap.api.IMediatorMap;
+
 import robotlegs.bender.framework.api.IConfig;
+import robotlegs.bender.framework.api.IInjector;
 
 public class MainConfig implements IConfig {
 
-    public function configure():void {
-    }
+    [Inject]
+    public var injector:IInjector;
 
+    [Inject]
+    public var mediatorMap:IMediatorMap;
+
+    public function configure():void {
+
+        trace('injecting');
+        injector.map(ImagesGalleryModel).asSingleton();
+
+        trace('configure mediator');
+        mediatorMap.map(ImageItemView).toMediator(ImagesMediator);
+
+
+
+    }
 }
 }

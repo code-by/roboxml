@@ -1,8 +1,11 @@
 package {
 
+import events.CoreEvent;
+
 import flash.display.Loader;
 import flash.display.Sprite;
 import flash.events.Event;
+import flash.events.IEventDispatcher;
 import flash.net.URLLoader;
 import flash.net.URLRequest;
 import flash.text.TextField;
@@ -14,42 +17,32 @@ import robotlegs.bender.framework.impl.Context;
 
 public class Roboxml extends Sprite {
 
+    [Inject]
+    public var eventBus:IEventDispatcher;
+
     public var imagesBig:Vector.<String>;
     public var imagesSmall:Vector.<String>;
+
+    [PostConstruct]
+    public function postConstruct():void{
+    }
 
     public function Roboxml() {
 
         var context:Context = new Context();
-        context.install(MVCSBundle).install(MainContextBundle).configure(MainConfig).configure(CommandsConfig).configure(new ContextView(this)).initialize();
+        context.install(MVCSBundle).install(MainContextBundle).configure(MainConfig, CommandsConfig).configure(new ContextView(this)).initialize();
         context.injector.injectInto(this);
 
-        var xmlLoader:URLLoader = new URLLoader();
+        postConstruct();
 
-        xmlLoader.addEventListener(Event.COMPLETE, LoadXML);
-        xmlLoader.load(new URLRequest("assets/images.xml"));
+        trace('dispatch event');
+        eventBus.dispatchEvent(new Event(CoreEvent.LOAD_XML));
+
 
     }
 
 
-    private function LoadXML(e:Event):void {
-        var xmlData:XML = new XML(e.target.data);
-        trace(xmlData);
 
-        imagesBig = new Vector.<String>;
-        imagesSmall = new Vector.<String>;
-
-        var len:int = xmlData.image.length();
-        trace(len);
-        for (var i:int = 0; i < len; i++)
-        {
-            imagesBig.push(xmlData.image[i].@bname);
-            imagesSmall.push(xmlData.image[i].@sname);
-        }
-
-        loadImages();
-
-        trace('ok');
-    }
 
     private function loadImages():void {
 
