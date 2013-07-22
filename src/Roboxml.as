@@ -25,6 +25,7 @@ public class Roboxml extends Sprite {
 
     [PostConstruct]
     public function postConstruct():void{
+        eventBus.dispatchEvent(new Event(CoreEvent.LOAD_XML));
     }
 
     public function Roboxml() {
@@ -32,12 +33,6 @@ public class Roboxml extends Sprite {
         var context:Context = new Context();
         context.install(MVCSBundle).install(MainContextBundle).configure(MainConfig, CommandsConfig).configure(new ContextView(this)).initialize();
         context.injector.injectInto(this);
-
-        postConstruct();
-
-        trace('dispatch event');
-        eventBus.dispatchEvent(new Event(CoreEvent.LOAD_XML));
-
 
     }
 
