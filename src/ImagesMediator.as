@@ -7,6 +7,7 @@
  */
 package {
 import events.CoreEvent;
+import events.ImagesEvent;
 
 import robotlegs.bender.bundles.mvcs.Mediator;
 
@@ -15,6 +16,7 @@ public class ImagesMediator extends Mediator {
     override public function initialize():void {
         trace('mediator initialized');
         addContextListener(CoreEvent.LOAD_XML, dispatch);
+        addContextListener(ImagesEvent.SHOW_IMAGES, dispatch);
     }
 }
 }

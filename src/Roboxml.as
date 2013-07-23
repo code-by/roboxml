@@ -25,7 +25,7 @@ public class Roboxml extends Sprite {
 
     [PostConstruct]
     public function postConstruct():void{
-        eventBus.dispatchEvent(new Event(CoreEvent.LOAD_XML));
+        eventBus.dispatchEvent(new CoreEvent(CoreEvent.LOAD_XML));
     }
 
     public function Roboxml() {

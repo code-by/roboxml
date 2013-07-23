@@ -6,16 +6,26 @@
  * To change this template use File | Settings | File Templates.
  */
 package commands {
+import events.ImagesEvent;
+
 import flash.events.Event;
+import flash.events.EventDispatcher;
+import flash.events.IEventDispatcher;
 import flash.net.URLLoader;
 import flash.net.URLRequest;
 
+import org.osmf.elements.ImageElement;
+
 import robotlegs.bender.bundles.mvcs.Command;
+import robotlegs.bender.extensions.eventDispatcher.EventDispatcherExtension;
 
 public class LoadImagesXML extends Command {
 
     [Inject]
-    public var imageModels:ImagesGalleryModel;
+    public var imageModelsGallery:ImagesGalleryModel;
+
+    [Inject]
+    public var eventBus:IEventDispatcher;
 
     override public function execute():void {
 
@@ -32,6 +42,10 @@ public class LoadImagesXML extends Command {
         var xmlData:XML = new XML(e.target.data);
         var imageModel:ImageItemModel;
 
+        imageModelsGallery = new ImagesGalleryModel();
+
+        trace(imageModelsGallery);
+
         for (var i:int = 0; i < xmlData.image.length(); i++)
         {
 
@@ -39,9 +53,16 @@ public class LoadImagesXML extends Command {
 
             imageModel.imageFileBig = xmlData.image[i].@bname
             imageModel.imageFileSmall = xmlData.image[i].@sname
+
+            imageModelsGallery.imageModels.push(imageModel);
+
         }
 
         trace('ok');
+
+        eventBus.dispatchEvent(new ImagesEvent(ImagesEvent.SHOW_IMAGES));
+
+
     }
 
 }

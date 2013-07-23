@@ -7,6 +7,7 @@
  */
 package {
 import commands.LoadImagesXML;
+import commands.ShowImages;
 
 import events.CoreEvent;
 
@@ -22,6 +23,7 @@ public class CommandsConfig implements IConfig {
     public function configure():void {
         trace('commands config init');
         commandMap.map(CoreEvent.LOAD_XML, CoreEvent).toCommand(LoadImagesXML);
+        commandMap.map(CoreEvent.LOAD_XML, CoreEvent).toCommand(ShowImages);
     }
 
 }

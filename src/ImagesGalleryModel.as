@@ -11,6 +11,7 @@ public class ImagesGalleryModel {
     public var imageModels:Vector.<ImageItemModel>;
 
     public function ImagesGalleryModel() {
+        imageModels = new Vector.<ImageItemModel>();
     }
 
 }

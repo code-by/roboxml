@@ -8,13 +8,13 @@
 package {
 import flash.display.Sprite;
 import flash.events.Event;
+import flash.events.MouseEvent;
 
 public class ImageItemView extends Sprite
 {
 
-
-
     public function ImageItemView() {
+       //addEventListener(MouseEvent.CLICK, onClick);
        addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
     }
 
