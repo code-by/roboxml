@@ -11,11 +11,20 @@ import events.ImagesEvent;
 
 import robotlegs.bender.bundles.mvcs.Mediator;
 
+import views.ImagesGallery;
+
 public class GalleryMediator extends Mediator {
 
+    [Inject]
+    public var imageGallery:ImagesGallery;
+
     override public function initialize():void {
-        trace('mediator initialized');
-        addContextListener(ImagesEvent.SHOW_IMAGES, dispatch);
+        trace('gallery mediator initialized');
+        addContextListener(ImagesEvent.SHOW_IMAGES, showImages);
+    }
+
+    private function showImages(event:ImagesEvent):void {
+        trace('showImages called');
     }
 }
 }

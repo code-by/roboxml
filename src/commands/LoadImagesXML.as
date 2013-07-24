@@ -62,7 +62,7 @@ public class LoadImagesXML extends Command {
 
         }
 
-        trace('ok');
+        trace('XML command done');
 
         eventBus.dispatchEvent(new ImagesEvent(ImagesEvent.SHOW_IMAGES));
 

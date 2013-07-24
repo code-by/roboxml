@@ -14,7 +14,7 @@ import robotlegs.bender.bundles.mvcs.Mediator;
 public class CoreMediator extends Mediator {
 
     override public function initialize():void {
-        trace('mediator initialized');
+        trace('core mediator initialized');
         addContextListener(CoreEvent.LOAD_XML, dispatch);
         //addContextListener(ImagesEvent.SHOW_IMAGES, dispatch);
     }

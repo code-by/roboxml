@@ -24,6 +24,7 @@ import robotlegs.bender.extensions.contextView.ContextView;
 import robotlegs.bender.framework.impl.Context;
 
 import views.ImageItemView;
+import views.ImagesGallery;
 
 public class Roboxml extends Sprite {
 
@@ -42,6 +43,9 @@ public class Roboxml extends Sprite {
 
         stage.align = StageAlign.TOP_LEFT;
         stage.scaleMode = StageScaleMode.NO_SCALE;
+
+        var imagesGallery:ImagesGallery = new ImagesGallery();
+        addChild(imagesGallery);
 
         var context:Context = new Context();
         context.install(MVCSBundle).install(MainContextBundle).configure(MainConfig, CommandsConfig).configure(new ContextView(this)).initialize();
