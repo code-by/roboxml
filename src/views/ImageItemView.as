@@ -5,7 +5,7 @@
  * Time: 23:42
  * To change this template use File | Settings | File Templates.
  */
-package {
+package views {
 import flash.display.Sprite;
 import flash.events.Event;
 import flash.events.MouseEvent;

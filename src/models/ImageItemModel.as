@@ -5,7 +5,7 @@
  * Time: 13:32
  * To change this template use File | Settings | File Templates.
  */
-package {
+package models {
 import flash.events.EventDispatcher;
 
 public class ImageItemModel extends EventDispatcher {

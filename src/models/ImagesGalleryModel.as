@@ -5,7 +5,7 @@
  * Time: 17:47
  * To change this template use File | Settings | File Templates.
  */
-package {
+package models {
 public class ImagesGalleryModel {
 
     public var imageModels:Vector.<ImageItemModel>;

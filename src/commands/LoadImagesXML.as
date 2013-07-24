@@ -14,6 +14,10 @@ import flash.events.IEventDispatcher;
 import flash.net.URLLoader;
 import flash.net.URLRequest;
 
+import models.ImageItemModel;
+
+import models.ImagesGalleryModel;
+
 import org.osmf.elements.ImageElement;
 
 import robotlegs.bender.bundles.mvcs.Command;

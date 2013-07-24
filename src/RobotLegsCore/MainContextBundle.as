@@ -5,7 +5,7 @@
  * Time: 23:44
  * To change this template use File | Settings | File Templates.
  */
-package {
+package robotlegsCore {
 import robotlegs.bender.framework.api.IBundle;
 import robotlegs.bender.framework.api.IContext;
 

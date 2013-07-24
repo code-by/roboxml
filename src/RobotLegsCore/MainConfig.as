@@ -5,13 +5,18 @@
  * Time: 23:44
  * To change this template use File | Settings | File Templates.
  */
-package {
+package robotlegsCore {
 import events.CoreEvent;
 
-import robotlegs.bender.extensions.mediatorMap.api.IMediatorMap;
+import mediators.CoreMediator;
 
+import models.ImagesGalleryModel;
+
+import robotlegs.bender.extensions.mediatorMap.api.IMediatorMap;
 import robotlegs.bender.framework.api.IConfig;
 import robotlegs.bender.framework.api.IInjector;
+
+import views.ImageItemView;
 
 public class MainConfig implements IConfig {
 
@@ -27,9 +32,7 @@ public class MainConfig implements IConfig {
         injector.map(ImagesGalleryModel).asSingleton();
 
         trace('configure mediator');
-        mediatorMap.map(ImageItemView).toMediator(ImagesMediator);
-
-
+        mediatorMap.map(ImageItemView).toMediator(CoreMediator); // XML Loaded
 
     }
 }

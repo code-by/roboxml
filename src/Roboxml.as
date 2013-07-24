@@ -1,9 +1,17 @@
 package {
 
+import models.ImageItemModel;
+
+import robotlegsCore.CommandsConfig;
+import robotlegsCore.MainConfig;
+import robotlegsCore.MainContextBundle;
+
 import events.CoreEvent;
 
 import flash.display.Loader;
 import flash.display.Sprite;
+import flash.display.StageAlign;
+import flash.display.StageScaleMode;
 import flash.events.Event;
 import flash.events.IEventDispatcher;
 import flash.net.URLLoader;
@@ -15,6 +23,8 @@ import robotlegs.bender.extensions.contextView.ContextView;
 
 import robotlegs.bender.framework.impl.Context;
 
+import views.ImageItemView;
+
 public class Roboxml extends Sprite {
 
     [Inject]
@@ -24,11 +34,14 @@ public class Roboxml extends Sprite {
     public var imagesSmall:Vector.<String>;
 
     [PostConstruct]
-    public function postConstruct():void{
+    public function postConstruct():void {
         eventBus.dispatchEvent(new CoreEvent(CoreEvent.LOAD_XML));
     }
 
     public function Roboxml() {
+
+        stage.align = StageAlign.TOP_LEFT;
+        stage.scaleMode = StageScaleMode.NO_SCALE;
 
         var context:Context = new Context();
         context.install(MVCSBundle).install(MainContextBundle).configure(MainConfig, CommandsConfig).configure(new ContextView(this)).initialize();
