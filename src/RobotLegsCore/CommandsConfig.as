@@ -7,7 +7,6 @@
  */
 package robotlegsCore {
 import commands.LoadImagesXML;
-import commands.ShowImages;
 
 import events.CoreEvent;
 import events.ImagesEvent;

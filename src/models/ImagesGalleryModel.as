@@ -10,6 +10,8 @@ public class ImagesGalleryModel {
 
     public var imageModels:Vector.<ImageItemModel>;
 
+    // Stores filenames of all images in gallery
+
     public function ImagesGalleryModel() {
         imageModels = new Vector.<ImageItemModel>();
     }

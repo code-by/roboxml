@@ -37,7 +37,8 @@ public class MainConfig implements IConfig {
 
         trace('configure mediator');
         //mediatorMap.map(ImageItemView).toMediator(CoreMediator); // XML Loaded
-        mediatorMap.map(ImagesGallery).toMediator(GalleryMediator); // XML Loaded
+        mediatorMap.map(ImagesGallery).toMediator(GalleryMediator); // for listen Gallery view
+        mediatorMap.map(ImagesGalleryModel).toMediator(GalleryMediator); // Gallery model to Gallery mediator
 
 
 

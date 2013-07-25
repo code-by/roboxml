@@ -10,7 +10,15 @@ import flash.events.Event;
 
 public class ImagesEvent extends Event {
 
-    public static const SHOW_IMAGES:String = "ShowImages";
+    public var x:int;
+    public var y:int;
+
+    public var x_changed:Boolean = false;
+    public var y_changed:Boolean = false;
+
+    public static const CLICK:String = "ImageClick";
+    public static const MOVING:String = "ImageMoving";
+    public static const LOAD_IMAGE:String = "LoadImage";
 
     public function ImagesEvent(type:String) {
         super(type);

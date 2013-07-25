@@ -6,6 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 package commands {
+import events.CoreEvent;
 import events.ImagesEvent;
 
 import flash.events.Event;
@@ -26,7 +27,7 @@ import robotlegs.bender.extensions.eventDispatcher.EventDispatcherExtension;
 public class LoadImagesXML extends Command {
 
     [Inject]
-    public var imageModelsGallery:ImagesGalleryModel;
+    public var imagesGalleryModels:ImagesGalleryModel;
 
     [Inject]
     public var eventBus:IEventDispatcher;
@@ -46,9 +47,7 @@ public class LoadImagesXML extends Command {
         var xmlData:XML = new XML(e.target.data);
         var imageModel:ImageItemModel;
 
-        imageModelsGallery = new ImagesGalleryModel();
-
-        trace(imageModelsGallery);
+        trace(imagesGalleryModels);
 
         for (var i:int = 0; i < xmlData.image.length(); i++)
         {
@@ -58,13 +57,13 @@ public class LoadImagesXML extends Command {
             imageModel.imageFileBig = xmlData.image[i].@bname
             imageModel.imageFileSmall = xmlData.image[i].@sname
 
-            imageModelsGallery.imageModels.push(imageModel);
+            imagesGalleryModels.imageModels.push(imageModel);
 
         }
 
         trace('XML command done');
 
-        eventBus.dispatchEvent(new ImagesEvent(ImagesEvent.SHOW_IMAGES));
+        eventBus.dispatchEvent(new ImagesEvent(CoreEvent.SHOW_IMAGES));
 
 
     }

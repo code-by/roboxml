@@ -26,6 +26,8 @@ import robotlegs.bender.framework.impl.Context;
 import views.ImageItemView;
 import views.ImagesGallery;
 
+[SWF(width="1280", height="1024")]
+
 public class Roboxml extends Sprite {
 
     [Inject]
@@ -56,36 +58,8 @@ public class Roboxml extends Sprite {
 
 
 
-    private function loadImages():void {
-
-        const imagesPerRow:uint = 5;
-        var imageItemView:ImageItemView;
-        var imageItemModel:ImageItemModel;
-
-        for(var i:uint = 0;i<imagesBig.length;i++) {
-
-            imageItemView = new ImageItemView();
-            imageItemModel.imageFileBig = imagesBig[i];
-            imageItemModel.imageFileSmall = imagesSmall[i];
-
-            trace(imagesBig[i]+' '+imagesSmall[i]);
-
-            var loader:Loader = new Loader();
-            loader.load(new URLRequest('assets/' + imageItemModel.imageFileSmall));
-            loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onImageLoaded);
-
-            //addChild(imageItemView);
-
-            imageItemView.x = 10 + (i % 4)*110;
-            imageItemView.y = 10 + (Math.floor(i / imagesPerRow) * 110);
-
-        }
-
-    }
-
     private function onImageLoaded(event:Event):void {
-        event.target.removeEventListener(Event.COMPLETE, onImageLoaded);
-        addChild(event.target.content);
+
     }
 
 }

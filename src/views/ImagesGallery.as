@@ -11,6 +11,8 @@ import flash.display.Sprite;
 public class ImagesGallery extends Sprite {
 
     public function ImagesGallery() {
+        this.x = 0;
+        this.y = 0;
     }
 
 }
