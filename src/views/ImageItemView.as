@@ -28,7 +28,7 @@ public class ImageItemView extends Sprite
     }
 
     private function onAddedToStage(event:Event):void {
-
+        // add event listener onClick ?
     }
 
     public function get model():ImageItemModel {

@@ -2,25 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5967933-aef1-43c3-afec-b7d3dc75870e" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Admin\IdeaProjects\roboxml\src\commands\ShowImages.as" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/1116.jpg" afterPath="$PROJECT_DIR$/src/assets/1116.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/1116_1.jpg" afterPath="$PROJECT_DIR$/src/assets/1116_1.jpg" />
-      <change type="MODIFICATION" beforePath="C:\Users\Admin\IdeaProjects\roboxml\src\robotlegsCore\CommandsConfig.as" afterPath="$PROJECT_DIR$/src/robotlegsCore/CommandsConfig.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/events/CoreEvent.as" afterPath="$PROJECT_DIR$/src/events/CoreEvent.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mediators/GalleryMediator.as" afterPath="$PROJECT_DIR$/src/mediators/GalleryMediator.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/ImageItemModel.as" afterPath="$PROJECT_DIR$/src/models/ImageItemModel.as" />
+      <change type="DELETED" beforePath="C:\Users\Admin\IdeaProjects\roboxml\src\mediators\CoreMediator.as" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Admin\IdeaProjects\roboxml\src\mediators\GalleryMediator.as" afterPath="$PROJECT_DIR$/src/mediators/ImagesGalleryMediator.as" />
+      <change type="MOVED" beforePath="C:\Users\Admin\IdeaProjects\roboxml\src\views\ImagesGallery.as" afterPath="$PROJECT_DIR$/src/views/ImagesGalleryView.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/ImageItemView.as" afterPath="$PROJECT_DIR$/src/views/ImageItemView.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/events/ImagesEvent.as" afterPath="$PROJECT_DIR$/src/events/ImagesEvent.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/ImagesGallery.as" afterPath="$PROJECT_DIR$/src/views/ImagesGallery.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/ImagesGalleryModel.as" afterPath="$PROJECT_DIR$/src/models/ImagesGalleryModel.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/commands/LoadImagesXML.as" afterPath="$PROJECT_DIR$/src/commands/LoadImagesXML.as" />
+      <change type="MODIFICATION" beforePath="C:\Users\Admin\IdeaProjects\roboxml\src\robotlegsCore\MainConfig.as" afterPath="$PROJECT_DIR$/src/robotlegsCore/MainConfig.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Roboxml.as" afterPath="$PROJECT_DIR$/src/Roboxml.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="roboxml.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/fragment.js2" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374689570683" ignored="false" />
     <file path="/Dummy.txt" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374591028467" ignored="false" />
-    <file path="/a.dummy" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374754562361" ignored="false" />
+    <file path="/a.dummy" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374784677041" ignored="false" />
     <file path="/Roboxml.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374689550884" ignored="false" />
     <file path="/imageItemView.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374353120563" ignored="false" />
     <file path="$PROJECT_DIR$/../pacman/Pacman.Base/src/appcontext/MainContextBundle.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374481927639" ignored="false" />
@@ -37,11 +31,13 @@
     <file path="/ImagesMediator.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374590468116" ignored="false" />
     <file path="/ImagesEvent.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374757628217" ignored="false" />
     <file path="/ShowImages.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374590736572" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374760464215" ignored="false" />
     <file path="/GalleryMediator.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374760213304" ignored="false" />
     <file path="/ImagesGallery.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374759447281" ignored="false" />
     <file path="/fragment.js" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374742670172" ignored="false" />
-    <file path="/ImageItemView.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374758829381" ignored="false" />
+    <file path="/ImageItemView.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374762792342" ignored="false" />
+    <file path="$PROJECT_DIR$/../robotest/src/CommandsConfig.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374783750736" ignored="false" />
+    <file path="/ImagesGalleryView.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374784986021" ignored="false" />
+    <file path="/ImagesGalleryMediator.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374784709052" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +101,7 @@
       <file leaf-file-name="Roboxml.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Roboxml.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="22" selection-start="785" selection-end="785" vertical-scroll-proportion="0.0">
+            <state line="53" column="5" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,19 +125,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoreMediator.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mediators/CoreMediator.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="41" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ImageItemModel.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/ImageItemModel.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="20" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0">
+            <state line="49" column="5" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#169#195#0" expanded="true" />
@@ -161,10 +148,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageItemView.as" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ImageItemView.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/ImageItemView.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="28" selection-start="1677" selection-end="1677" vertical-scroll-proportion="1.278834">
+            <state line="29" column="39" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#168#194#0" expanded="true" />
               </folding>
@@ -175,7 +162,16 @@
       <file leaf-file-name="MainConfig.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/robotlegsCore/MainConfig.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="87" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0">
+            <state line="10" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandsConfig.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/robotlegsCore/CommandsConfig.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="35" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#176#206#0" expanded="true" />
               </folding>
@@ -183,10 +179,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GalleryMediator.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mediators/GalleryMediator.as">
+      <file leaf-file-name="ImagesGalleryMediator.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mediators/ImagesGalleryMediator.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="39" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.0">
+            <state line="42" column="0" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#172#196#0" expanded="true" />
               </folding>
@@ -194,11 +190,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImagesGallery.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/ImagesGallery.as">
+      <file leaf-file-name="ImagesGalleryView.as" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/ImagesGalleryView.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="8" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="64" column="12" selection-start="1820" selection-end="1820" vertical-scroll-proportion="1.1756487">
+              <folding>
+                <element signature="e#168#196#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -221,28 +219,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/MainConfig.as" />
-        <option value="$PROJECT_DIR$/src/CommandsConfig.as" />
         <option value="$PROJECT_DIR$/src/RobotLegsCore/CommandsConfig.as" />
         <option value="$PROJECT_DIR$/src/mediators/CoreMediator.as" />
         <option value="$PROJECT_DIR$/src/commands/ShowImages.as" />
         <option value="$PROJECT_DIR$/src/robotlegsCore/CommandsConfig.as" />
         <option value="$PROJECT_DIR$/src/models/ImagesGalleryModel.as" />
-        <option value="$PROJECT_DIR$/src/robotlegsCore/MainConfig.as" />
         <option value="$PROJECT_DIR$/src/events/CoreEvent.as" />
         <option value="$PROJECT_DIR$/src/commands/LoadImagesXML.as" />
         <option value="$PROJECT_DIR$/src/events/ImagesEvent.as" />
         <option value="$PROJECT_DIR$/src/models/ImageItemModel.as" />
         <option value="$PROJECT_DIR$/src/views/ImagesGallery.as" />
+        <option value="$PROJECT_DIR$/src/views/ImageItemView.as" />
+        <option value="$PROJECT_DIR$/src/robotlegsCore/MainConfig.as" />
         <option value="$PROJECT_DIR$/src/Roboxml.as" />
         <option value="$PROJECT_DIR$/src/mediators/GalleryMediator.as" />
-        <option value="$PROJECT_DIR$/src/views/ImageItemView.as" />
+        <option value="$PROJECT_DIR$/src/mediators/ImagesGalleryMediator.as" />
+        <option value="$PROJECT_DIR$/src/views/ImagesGalleryView.as" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
-    <option name="y" value="16" />
+    <option name="x" value="12" />
+    <option name="y" value="6" />
     <option name="width" value="1715" />
     <option name="height" value="995" />
   </component>
@@ -706,13 +704,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="16" width="1715" height="995" extended-state="0" />
+    <frame x="12" y="6" width="1715" height="995" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39832535" sideWeight="0.5442903" order="3" side_tool="false" content_ui="tabs" />
@@ -728,7 +726,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2831216" sideWeight="0.6016746" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2831216" sideWeight="0.67105263" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -828,31 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/robotlegsCore/CommandsConfig.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="35" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#176#206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/robotlegsCore/MainConfig.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="87" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#176#206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/robotlegsCore/MainContextBundle.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/events/CoreEvent.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="24" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
@@ -869,36 +842,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mediators/CoreMediator.as">
+    <entry file="file://$PROJECT_DIR$/src/models/ImageItemModel.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="41" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
+        <state line="49" column="5" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#169#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/robotlegsCore/MainContextBundle.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="17" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/robotlegsCore/CommandsConfig.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="35" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#176#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/robotlegsCore/MainConfig.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Roboxml.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="22" selection-start="785" selection-end="785" vertical-scroll-proportion="0.0">
+        <state line="53" column="5" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mediators/GalleryMediator.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="39" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#172#196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/ImageItemModel.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="20" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#169#195#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -909,18 +889,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/ImagesGallery.as">
+    <entry file="file://$PROJECT_DIR$/src/views/ImageItemView.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="8" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="29" column="39" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#168#194#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/ImageItemView.as">
+    <entry file="file://$PROJECT_DIR$/src/mediators/ImagesGalleryMediator.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="28" selection-start="1677" selection-end="1677" vertical-scroll-proportion="1.278834">
+        <state line="42" column="0" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#168#194#0" expanded="true" />
+            <element signature="e#172#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/ImagesGalleryView.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="12" selection-start="1820" selection-end="1820" vertical-scroll-proportion="1.1756487">
+          <folding>
+            <element signature="e#168#196#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -24,7 +24,7 @@ import robotlegs.bender.extensions.contextView.ContextView;
 import robotlegs.bender.framework.impl.Context;
 
 import views.ImageItemView;
-import views.ImagesGallery;
+import views.ImagesGalleryView;
 
 [SWF(width="1280", height="1024")]
 
@@ -36,17 +36,12 @@ public class Roboxml extends Sprite {
     public var imagesBig:Vector.<String>;
     public var imagesSmall:Vector.<String>;
 
-    [PostConstruct]
-    public function postConstruct():void {
-        eventBus.dispatchEvent(new CoreEvent(CoreEvent.LOAD_XML));
-    }
-
     public function Roboxml() {
 
         stage.align = StageAlign.TOP_LEFT;
         stage.scaleMode = StageScaleMode.NO_SCALE;
 
-        var imagesGallery:ImagesGallery = new ImagesGallery();
+        var imagesGallery:ImagesGalleryView = new ImagesGalleryView();
         addChild(imagesGallery);
 
         var context:Context = new Context();
@@ -56,10 +51,9 @@ public class Roboxml extends Sprite {
     }
 
 
-
-
-    private function onImageLoaded(event:Event):void {
-
+    [PostConstruct]
+    public function postConstruct():void {
+        eventBus.dispatchEvent(new CoreEvent(CoreEvent.LOAD_XML));
     }
 
 }

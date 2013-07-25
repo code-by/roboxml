@@ -6,12 +6,8 @@
  * To change this template use File | Settings | File Templates.
  */
 package robotlegsCore {
-import commands.LoadImagesXML;
 
-import events.CoreEvent;
-
-import mediators.CoreMediator;
-import mediators.GalleryMediator;
+import mediators.ImagesGalleryMediator;
 
 import models.ImagesGalleryModel;
 
@@ -19,8 +15,7 @@ import robotlegs.bender.extensions.mediatorMap.api.IMediatorMap;
 import robotlegs.bender.framework.api.IConfig;
 import robotlegs.bender.framework.api.IInjector;
 
-import views.ImageItemView;
-import views.ImagesGallery;
+import views.ImagesGalleryView;
 
 public class MainConfig implements IConfig {
 
@@ -36,9 +31,8 @@ public class MainConfig implements IConfig {
         injector.map(ImagesGalleryModel).asSingleton();
 
         trace('configure mediator');
-        //mediatorMap.map(ImageItemView).toMediator(CoreMediator); // XML Loaded
-        mediatorMap.map(ImagesGallery).toMediator(GalleryMediator); // for listen Gallery view
-        mediatorMap.map(ImagesGalleryModel).toMediator(GalleryMediator); // Gallery model to Gallery mediator
+        mediatorMap.map(ImagesGalleryView).toMediator(ImagesGalleryMediator); // for listen Gallery view
+        mediatorMap.map(ImagesGalleryModel).toMediator(ImagesGalleryMediator); // Gallery model to Gallery mediator
 
 
 
