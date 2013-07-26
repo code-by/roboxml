@@ -9,20 +9,27 @@ package views {
 import flash.display.Loader;
 import flash.display.Sprite;
 import flash.events.Event;
+import flash.events.MouseEvent;
 import flash.net.URLRequest;
 
 public class ImageBigView extends Sprite {
 
     public function ImageBigView():void {
         trace('ImageBigView constructor');
-        //visible = false;
+        visible = false;
+
+        //graphics.beginFill(0xFF0000, 1);
+        //graphics.drawRect(0, 0, 100, 100);
+
+        addEventListener(MouseEvent.CLICK, onMouseClick);
+
         x = 20;
         y = 20;
-        width = 1024;
-        height = 768;
-        graphics.beginFill(0xFF0000, 1);
-        graphics.drawRect(0, 0, 100, 100);
 
+    }
+
+    private function onMouseClick(event:MouseEvent):void {
+        visible = false;
     }
 
     public function loadImage(fileName:String) {
@@ -41,7 +48,10 @@ public class ImageBigView extends Sprite {
             removeChildren(0);
         }
         addChild(event.target.content);
-        //visible = true;
+        visible = true;
+        width = 1024;
+        height = 768;
+
     }
 
 }

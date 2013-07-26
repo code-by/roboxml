@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5967933-aef1-43c3-afec-b7d3dc75870e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mediators/ImageBigMediator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mediators/ImageItemMediator.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/ImageBigView.as" afterPath="$PROJECT_DIR$/src/views/ImageBigView.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/ImageItemView.as" afterPath="$PROJECT_DIR$/src/views/ImageItemView.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/events/ImagesEvent.as" afterPath="$PROJECT_DIR$/src/events/ImagesEvent.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mediators/ImagesGalleryMediator.as" afterPath="$PROJECT_DIR$/src/mediators/ImagesGalleryMediator.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Roboxml.as" afterPath="$PROJECT_DIR$/src/Roboxml.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="roboxml.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,10 +34,11 @@
     <file path="/ImagesGalleryView.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374784986021" ignored="false" />
     <file path="/ImagesGalleryMediator.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374838050468" ignored="false" />
     <file path="/index.template.html" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374786973092" ignored="false" />
-    <file path="/ImageBigView.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374854796060" ignored="false" />
+    <file path="/ImageBigView.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374855827091" ignored="false" />
     <file path="/LoadBigImage.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374837387267" ignored="false" />
     <file path="/ImageBigMediator.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374852906023" ignored="false" />
     <file path="/ImageItemMediator.as" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374844259376" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="f5967933-aef1-43c3-afec-b7d3dc75870e" time="1374855835819" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +102,7 @@
       <file leaf-file-name="Roboxml.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Roboxml.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0">
+            <state line="36" column="10" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -168,10 +163,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImagesGalleryMediator.as" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ImagesGalleryMediator.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mediators/ImagesGalleryMediator.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="12" selection-start="581" selection-end="581" vertical-scroll-proportion="0.08991228">
+            <state line="28" column="12" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#172#196#0" expanded="true" />
               </folding>
@@ -179,10 +174,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageBigView.as" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ImageBigView.as" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/ImageBigView.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
+            <state line="31" column="24" selection-start="741" selection-end="741" vertical-scroll-proportion="0.47807017">
               <folding>
                 <element signature="e#168#196#0" expanded="true" />
               </folding>
@@ -884,15 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/ImagesGalleryView.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="29" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#168#196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/ImageItemView.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="0" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0">
@@ -918,22 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/ImageBigView.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#168#196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Roboxml.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mediators/ImageBigMediator.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="55" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
@@ -954,9 +924,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mediators/ImagesGalleryMediator.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="12" selection-start="581" selection-end="581" vertical-scroll-proportion="0.08991228">
+        <state line="28" column="12" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#172#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Roboxml.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="10" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/ImagesGalleryView.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="29" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#168#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/ImageBigView.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="24" selection-start="741" selection-end="741" vertical-scroll-proportion="0.47807017">
+          <folding>
+            <element signature="e#168#196#0" expanded="true" />
           </folding>
         </state>
       </provider>
