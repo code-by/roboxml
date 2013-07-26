@@ -18,6 +18,8 @@ import models.ImagesGalleryModel;
 
 import robotlegs.bender.bundles.mvcs.Mediator;
 
+import views.ImageBigView;
+
 import views.ImageItemView;
 
 import views.ImagesGalleryView;
@@ -30,17 +32,24 @@ public class ImagesGalleryMediator extends Mediator {
     [Inject]
     public var imagesGalleryModel:ImagesGalleryModel;
 
+    [Inject]
+    public var imageBigView:ImageBigView;
+
+
     override public function initialize():void {
         trace('gallery mediator initialized');
-        addContextListener(CoreEvent.SHOW_IMAGES, showImages);
+        addContextListener(ImagesEvent.CLICK, showBigImage);
     }
 
     private function showImages(event:ImagesEvent):void {
         trace('showImages called');
-
         imagesGalleryView.model = imagesGalleryModel;
         imagesGalleryView.updateModel();
+    }
 
+    private function showBigImage(event:ImagesEvent):void {
+        trace('showBigImage called');
+        imageBigView.loadImage(event.imageFileBig);
     }
 
 }

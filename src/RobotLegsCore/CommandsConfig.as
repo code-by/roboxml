@@ -25,8 +25,6 @@ public class CommandsConfig implements IConfig {
     public function configure():void {
         trace('commands config init');
         commandMap.map(CoreEvent.LOAD_XML, CoreEvent).toCommand(LoadImagesXML);
-        //commandMap.map(ImagesEvent.SHOW_IMAGES, ImagesEvent).toCommand()
-
     }
 
 }

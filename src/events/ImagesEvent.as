@@ -13,6 +13,8 @@ public class ImagesEvent extends Event {
     public var x:int;
     public var y:int;
 
+    public var imageFileBig:String;
+
     public var x_changed:Boolean = false;
     public var y_changed:Boolean = false;
 

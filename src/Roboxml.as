@@ -23,6 +23,8 @@ import robotlegs.bender.extensions.contextView.ContextView;
 
 import robotlegs.bender.framework.impl.Context;
 
+import views.ImageBigView;
+
 import views.ImageItemView;
 import views.ImagesGalleryView;
 
@@ -32,9 +34,6 @@ public class Roboxml extends Sprite {
 
     [Inject]
     public var eventBus:IEventDispatcher;
-
-    public var imagesBig:Vector.<String>;
-    public var imagesSmall:Vector.<String>;
 
     public function Roboxml() {
 
@@ -48,8 +47,12 @@ public class Roboxml extends Sprite {
         context.install(MVCSBundle).install(MainContextBundle).configure(MainConfig, CommandsConfig).configure(new ContextView(this)).initialize();
         context.injector.injectInto(this);
 
+        var imageBigView:ImageBigView = new ImageBigView();
+        addChild(imageBigView);
+        imageBigView.visible = false;
+        imageBigView.width = 1024;
+        imageBigView.height = 768;
     }
-
 
     [PostConstruct]
     public function postConstruct():void {

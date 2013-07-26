@@ -35,7 +35,7 @@ public class ImagesGalleryView extends Sprite {
 
         trace('Images count: '+_model.imageModels.length);
 
-        for(var i:uint = 0; i < _model.imageModels.length-1; i++) {
+        for(var i:uint = 0; i < _model.imageModels.length; i++) {
 
             trace('--------------------');
             trace('CREATE IMAGE #'+i);
@@ -50,7 +50,7 @@ public class ImagesGalleryView extends Sprite {
 
             trace(imageItemModel.imageFileBig+' '+imageItemModel.imageFileSmall);
 
-            imageItemModel.x = 10 + (i % 4)*210;
+            imageItemModel.x = 10 + (i % imagesPerRow)*210;
             imageItemModel.y = 10 + (Math.floor(i / imagesPerRow) * 160);
 
             trace('set x='+imageItemModel.x+' y='+imageItemModel.y);

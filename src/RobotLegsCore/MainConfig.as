@@ -15,6 +15,8 @@ import robotlegs.bender.extensions.mediatorMap.api.IMediatorMap;
 import robotlegs.bender.framework.api.IConfig;
 import robotlegs.bender.framework.api.IInjector;
 
+import views.ImageBigView;
+
 import views.ImagesGalleryView;
 
 public class MainConfig implements IConfig {
@@ -33,8 +35,7 @@ public class MainConfig implements IConfig {
         trace('configure mediator');
         mediatorMap.map(ImagesGalleryView).toMediator(ImagesGalleryMediator); // for listen Gallery view
         mediatorMap.map(ImagesGalleryModel).toMediator(ImagesGalleryMediator); // Gallery model to Gallery mediator
-
-
+        mediatorMap.map(ImageBigView).toMediator(ImagesGalleryMediator); // for listen ImagesItemView click
 
     }
 }

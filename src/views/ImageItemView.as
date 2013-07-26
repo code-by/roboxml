@@ -25,6 +25,15 @@ public class ImageItemView extends Sprite
     public function ImageItemView() {
        //addEventListener(MouseEvent.CLICK, onClick);
        addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
+       addEventListener(MouseEvent.CLICK, onMouseClick);
+    }
+
+    private function onMouseClick(event:MouseEvent):void {
+        trace('mouse click');
+        var imagesEvent = new ImagesEvent(ImagesEvent.CLICK);
+        imagesEvent.imageFileBig = _model.imageFileBig;
+        dispatchEvent(imagesEvent);
+
     }
 
     private function onAddedToStage(event:Event):void {
@@ -52,7 +61,7 @@ public class ImageItemView extends Sprite
         trace('onImageLoaded');
         event.target.removeEventListener(Event.COMPLETE, onImageLoaded);
         if (numChildren>0) {
-            //removeChildren(0);
+            removeChildren(0);
         }
         addChild(event.target.content);
     }
