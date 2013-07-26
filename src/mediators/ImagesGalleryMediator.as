@@ -26,30 +26,23 @@ import views.ImagesGalleryView;
 
 public class ImagesGalleryMediator extends Mediator {
 
+    // ONLY ONE MEDIATOR FOR ONE VIEW
+
     [Inject]
     public var imagesGalleryView:ImagesGalleryView;
 
     [Inject]
     public var imagesGalleryModel:ImagesGalleryModel;
 
-    [Inject]
-    public var imageBigView:ImageBigView;
-
-
     override public function initialize():void {
         trace('gallery mediator initialized');
-        addContextListener(ImagesEvent.CLICK, showBigImage);
+        addContextListener(CoreEvent.SHOW_IMAGES, showImages);
     }
 
     private function showImages(event:ImagesEvent):void {
         trace('showImages called');
         imagesGalleryView.model = imagesGalleryModel;
         imagesGalleryView.updateModel();
-    }
-
-    private function showBigImage(event:ImagesEvent):void {
-        trace('showBigImage called');
-        imageBigView.loadImage(event.imageFileBig);
     }
 
 }

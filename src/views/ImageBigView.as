@@ -15,12 +15,18 @@ public class ImageBigView extends Sprite {
 
     public function ImageBigView():void {
         trace('ImageBigView constructor');
+        //visible = false;
         x = 20;
         y = 20;
+        width = 1024;
+        height = 768;
+        graphics.beginFill(0xFF0000, 1);
+        graphics.drawRect(0, 0, 100, 100);
+
     }
 
     public function loadImage(fileName:String) {
-        trace('onLoadImage');
+        trace('onLoadImage ImageBigView, filename = '+fileName);
         if (fileName!='') {
             var loader:Loader = new Loader();
             loader.load(new URLRequest('assets/' + fileName));
@@ -29,12 +35,13 @@ public class ImageBigView extends Sprite {
     }
 
     private function onImageLoaded(event:Event):void {
-        trace('onImageLoaded');
+        trace('onImageLoaded ImageBigView');
         event.target.removeEventListener(Event.COMPLETE, onImageLoaded);
         if (numChildren>0) {
             removeChildren(0);
         }
         addChild(event.target.content);
+        //visible = true;
     }
 
 }

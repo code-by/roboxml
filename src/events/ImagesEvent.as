@@ -27,6 +27,10 @@ public class ImagesEvent extends Event {
     }
 
 
-
+    override public function clone():Event {
+        var imageEvent:ImagesEvent = new ImagesEvent(ImagesEvent.CLICK);
+        imageEvent.imageFileBig = imageFileBig;
+        return imageEvent;
+    }
 }
 }

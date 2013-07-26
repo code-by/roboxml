@@ -7,6 +7,8 @@
  */
 package robotlegsCore {
 
+import mediators.ImageBigMediator;
+import mediators.ImageItemMediator;
 import mediators.ImagesGalleryMediator;
 
 import models.ImagesGalleryModel;
@@ -16,6 +18,7 @@ import robotlegs.bender.framework.api.IConfig;
 import robotlegs.bender.framework.api.IInjector;
 
 import views.ImageBigView;
+import views.ImageItemView;
 
 import views.ImagesGalleryView;
 
@@ -33,9 +36,11 @@ public class MainConfig implements IConfig {
         injector.map(ImagesGalleryModel).asSingleton();
 
         trace('configure mediator');
+        // ONLY ONE MEDIATOR FOR ONE VIEW !
         mediatorMap.map(ImagesGalleryView).toMediator(ImagesGalleryMediator); // for listen Gallery view
         mediatorMap.map(ImagesGalleryModel).toMediator(ImagesGalleryMediator); // Gallery model to Gallery mediator
-        mediatorMap.map(ImageBigView).toMediator(ImagesGalleryMediator); // for listen ImagesItemView click
+        mediatorMap.map(ImageItemView).toMediator(ImageItemMediator); // for listen ImagesItemView click and dispatch to ImageBigMediator
+        mediatorMap.map(ImageBigView).toMediator(ImageBigMediator); // for listen ImageBigView click
 
     }
 }

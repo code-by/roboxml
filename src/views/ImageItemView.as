@@ -29,11 +29,10 @@ public class ImageItemView extends Sprite
     }
 
     private function onMouseClick(event:MouseEvent):void {
-        trace('mouse click');
+        trace('item mouse click');
         var imagesEvent = new ImagesEvent(ImagesEvent.CLICK);
         imagesEvent.imageFileBig = _model.imageFileBig;
         dispatchEvent(imagesEvent);
-
     }
 
     private function onAddedToStage(event:Event):void {

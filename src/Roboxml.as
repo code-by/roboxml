@@ -47,11 +47,8 @@ public class Roboxml extends Sprite {
         context.install(MVCSBundle).install(MainContextBundle).configure(MainConfig, CommandsConfig).configure(new ContextView(this)).initialize();
         context.injector.injectInto(this);
 
-        var imageBigView:ImageBigView = new ImageBigView();
-        addChild(imageBigView);
-        imageBigView.visible = false;
-        imageBigView.width = 1024;
-        imageBigView.height = 768;
+        addChild(new ImageBigView);
+
     }
 
     [PostConstruct]
